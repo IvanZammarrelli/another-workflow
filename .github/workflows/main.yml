@@ -1,19 +1,17 @@
 name: CI Workflow
 
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-steps:
-- name: Checkout Repository
-uses: actions/checkout@v3
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
-- name: Print Hello
-run: echo "Hello, CI Workflow!"
-- name: Print Greeting
-run: echo "Welcome to CI Workflow!"
+    - name: Print Hello
+      run: echo "Hello, CI Workflow!"
