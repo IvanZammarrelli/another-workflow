@@ -1,0 +1,17 @@
+name: CI Workflow
+
+on:
+push:
+branches:
+- main
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+steps:
+- name: Checkout Repository
+uses: actions/checkout@v3
+
+- name: Print Hello
+run: echo "Hello, CI Workflow!"
