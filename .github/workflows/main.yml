@@ -15,3 +15,6 @@ jobs:
 
     - name: Print Hello
       run: echo "Hello, CI Workflow!"
+
+    - name: Print Greeting
+      run: echo "Welcome to CI Workflow!"
